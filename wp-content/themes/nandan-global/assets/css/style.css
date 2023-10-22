@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  @apply mx-auto px-4;
+}
+
+.description p {
+  @apply text-gray-500 mb-3;
+}
+
+.list-item ul {
+  @apply list-none m-0 p-0 pb-5 relative before:content-[''] before:inline-block before:w-3 before:bg-yellow-300 before:absolute before:left-[.35rem] before:top-2;
+}
+
+.list-item ul::before {
+  height: calc(100% - 10px);
+}
+
+/* mb-4 */
+.list-item ul li {
+  @apply relative pl-10 before:content-[''] before:inline-block before:w-5 before:h-5 before:border-yellow-300 before:border-4 before:bg-white before:p-2 before:absolute before:left-0 before:top-8 before:rounded-full;
+}
+
+.list-item .line {
+  width: calc(100% - 50%);
+}
+
+.list-item .vertical-line {
+  @apply absolute right-1/2 top-[-28px] border-r-[.75rem] border-r-yellow-300 h-10;
+}
