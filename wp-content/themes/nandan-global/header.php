@@ -24,7 +24,13 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'nandan-global' ); ?></a>
-
+	<?php
+		// Check if the tip_of_the_day_display function exists
+		if (function_exists('tip_of_the_day_display')) {
+			// Call the function to display the tip
+			tip_of_the_day_display();
+		}
+	?>
 	<header id="masthead" class="site-header">
 		<div class="fixed left-0 right-0 top-0 shadow-md z-10">
 			<!-- site navigation -->

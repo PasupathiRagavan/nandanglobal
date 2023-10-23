@@ -90,3 +90,38 @@ html {
 #buddypress .info.bp-feedback {
   @apply p-2;
 }
+
+/* Style for the modal container */
+.tip-modal {
+  display: none; /* Hide the modal by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  z-index: 4;
+}
+
+/* Style for the modal content */
+.tip-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 400px;
+}
+
+/* Style for the close button */
+.tip-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
