@@ -27,3 +27,17 @@
  */
 
  include( get_template_directory() . '/inc/custom/custom-menu.php' );
+
+/**
+ * Custom Trigger
+ */
+
+ include( get_template_directory() . '/inc/custom/gamepress/custom-trigger.php' );
+
+
+/**
+ * Custom Profile Picture
+ */
+
+ include( get_template_directory() . '/inc/custom/buddypress/custom-profile.php' );
+
