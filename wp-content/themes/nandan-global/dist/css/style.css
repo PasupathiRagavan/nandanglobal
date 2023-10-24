@@ -485,12 +485,20 @@ img, video {
   margin-bottom: 1.25rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
 
 .ml-\[\.35rem\] {
   margin-left: .35rem;
+}
+
+.mr-2 {
+  margin-right: .5rem;
 }
 
 .mr-auto {
@@ -505,8 +513,16 @@ img, video {
   margin-top: .5rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-auto {
   margin-top: auto;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .box-border {
@@ -2565,6 +2581,69 @@ body, html {
 
 #buddypress .info.bp-feedback {
   padding: .5rem;
+}
+
+.single-post input, .single-post textarea {
+  --tw-border-opacity: 1;
+  border-width: 1px;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+  padding: .5rem .75rem;
+  font-weight: 400;
+}
+
+.single-post input[type="submit"] {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(253 224 71 / var(--tw-bg-opacity)) !important;
+  --tw-text-opacity: 1 !important;
+  color: rgb(17 24 39 / var(--tw-text-opacity)) !important;
+  border-width: 0 !important;
+  align-items: center !important;
+  padding: .625rem 1.25rem !important;
+  font-size: .875rem !important;
+  line-height: 1.25rem !important;
+  display: inline-flex !important;
+}
+
+.single-post input[type="submit"]:hover {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity)) !important;
+}
+
+.single-post .comment-reply-title {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+  margin-top: .75rem;
+  margin-bottom: .75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+
+.single-post .comment-form p {
+  flex-direction: column;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  display: flex;
+}
+
+.single-post .comment-form p.comment-form-cookies-consent label {
+  margin-bottom: 0;
+  margin-left: .5rem;
+}
+
+.single-post .comment-form p.comment-form-cookies-consent, .single-post .comment-form p.form-submit {
+  flex-direction: row;
+  align-items: center;
+}
+
+.single-post .comment-form p.form-submit {
+  margin-top: 1.25rem;
+}
+
+.single-post .comment-form p label {
+  margin-bottom: .5rem;
 }
 
 .tip-modal {
