@@ -91,6 +91,40 @@ html {
   @apply p-2;
 }
 
+.single-post input,
+.single-post textarea {
+  @apply px-3 py-2 border border-gray-200 text-gray-900 font-normal;
+}
+
+.single-post input[type="submit"] {
+  @apply bg-yellow-300 inline-flex items-center border-0 text-gray-900 text-sm px-5 py-2.5  hover:bg-yellow-500 !important;
+}
+
+.single-post .comment-reply-title {
+  @apply font-bold text-gray-900 text-xl my-3;
+}
+
+.single-post .comment-form p {
+  @apply flex flex-col my-2;
+}
+
+.single-post .comment-form p.comment-form-cookies-consent label {
+  @apply mb-0 ml-2;
+}
+
+.single-post .comment-form p.comment-form-cookies-consent,
+.single-post .comment-form p.form-submit {
+  @apply flex-row items-center;
+}
+
+.single-post .comment-form p.form-submit {
+  @apply mt-5;
+}
+
+.single-post .comment-form p label {
+  @apply mb-2;
+}
+
 /* Style for the modal container */
 .tip-modal {
   display: none; /* Hide the modal by default */

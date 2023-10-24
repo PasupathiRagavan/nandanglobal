@@ -13,25 +13,23 @@
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h1 class="text-3xl text-gray-900 font-bold entry-title mb-1">', '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h2 class="entry-title text-2xl text-gray-900 font-bold"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
 		if ( 'post' === get_post_type() ) :
 			?>
-			<div class="entry-meta">
-				<?php
-				nandan_global_posted_on();
-				nandan_global_posted_by();
-				?>
+			<div class="entry-meta flex items-center mb-3">
+				
+				<p class="text-gray-400 mr-2"><?php nandan_global_posted_on(); ?></p>
+				<p class="text-gray-400"><?php  nandan_global_posted_by(); ?></p>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php nandan_global_post_thumbnail(); ?>
-
-	<div class="entry-content">
+	<div class="w-full mt-4 mb-6"><?php nandan_global_post_thumbnail(); ?></div>
+	<div class="entry-content description">
 		<?php
 		the_content(
 			sprintf(

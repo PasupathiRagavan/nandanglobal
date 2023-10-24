@@ -598,15 +598,6 @@ const droupdown = document.getElementById("droupdown");
 droupdownBtn.addEventListener("click", function() {
     droupdown.classList.toggle("hidden");
 });
-/* Tip Modal */ document.addEventListener("DOMContentLoaded", function() {
-    const tipModal = document.getElementById("tipModal");
-    const closeTipButton = document.getElementById("closeTipPopup");
-    // Show the tip modal when the page loads
-    tipModal.style.display = "block";
-    closeTipButton.addEventListener("click", function() {
-        tipModal.style.display = "none";
-    });
-});
 
 },{}]},["6rNVU","biPfD"], "biPfD", "parcelRequire5d29")
 
