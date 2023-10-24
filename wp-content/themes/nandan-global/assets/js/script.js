@@ -50,6 +50,7 @@ droupdownBtn.addEventListener("click", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const tipModal = document.getElementById("tipModal");
   const closeTipButton = document.getElementById("closeTipPopup");
+  console.log("trigger");
 
   // Show the tip modal when the page loads
   tipModal.style.display = "block";
