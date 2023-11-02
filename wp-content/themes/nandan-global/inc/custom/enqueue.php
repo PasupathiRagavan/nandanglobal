@@ -16,6 +16,8 @@ function wordpress_enqueue_styles()
     $getDateTime = new DateTime("now");
     $getCurrentDateTime = $getDateTime->format('U');
 
+    // Font Awesome
+    wp_enqueue_style( 'fontawesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', [], $getCurrentDateTime, "all");
     // Enqueue Main Style:
     wp_enqueue_style("theme", get_theme_file_uri("/dist/css/style.css"), [], $getCurrentDateTime, "all");
 }

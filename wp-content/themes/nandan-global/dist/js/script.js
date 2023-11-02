@@ -595,13 +595,12 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 /* Navbar user droupdown */ const droupdownBtn = document.getElementById("user-droupdown");
 const droupdown = document.getElementById("droupdown");
-droupdownBtn.addEventListener("click", function() {
+if (droupdownBtn) droupdownBtn.addEventListener("click", function() {
     droupdown.classList.toggle("hidden");
 });
 /* Tip Modal */ document.addEventListener("DOMContentLoaded", function() {
     const tipModal = document.getElementById("tipModal");
     const closeTipButton = document.getElementById("closeTipPopup");
-    console.log("trigger");
     // Show the tip modal when the page loads
     tipModal.style.display = "block";
     closeTipButton.addEventListener("click", function() {

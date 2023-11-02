@@ -481,6 +481,10 @@ img, video {
   margin-bottom: .75rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -519,10 +523,6 @@ img, video {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
 }
 
 .box-border {
@@ -1175,6 +1175,10 @@ img, video {
 
 .justify-items-stretch {
   justify-items: stretch;
+}
+
+.gap-1 {
+  gap: .25rem;
 }
 
 .gap-6 {
@@ -2647,7 +2651,7 @@ body, html {
 }
 
 .tip-modal {
-  z-index: 4;
+  z-index: 11;
   background-color: #000000b3;
   width: 100%;
   height: 100%;
